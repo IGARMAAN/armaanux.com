@@ -29,11 +29,11 @@ const routeList: RouteProps[] = [
     label: "About Me",
   },
   {
-    href: "#testimonials",
+    href: "/projects",
     label: "Projects",
   },
   {
-    href: "#pricing",
+    href: "/milestones",
     label: "Milestones",
   },
   {

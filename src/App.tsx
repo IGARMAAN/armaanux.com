@@ -16,6 +16,8 @@ import { Navbar } from "./components/Navbar";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { About } from "./components/About";
+import { Projects } from "./pages/Projects";
+import { Milestones } from "./pages/Milestones";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Routes>
         <Route path="/" element={<Hero />}/>
         <Route path="/about" element={<About />}/>
+        <Route path="/projects" element={<Projects />}/>
+        <Route path="/milestones" element={<Milestones />}/>
         </Routes>
       </Router>
     </>

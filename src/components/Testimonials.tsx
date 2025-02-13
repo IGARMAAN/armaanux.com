@@ -3,6 +3,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -17,85 +18,67 @@ interface TestimonialProps {
 const testimonials: TestimonialProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
-    comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+    name: "- Crystal K.",
+    userName: "Papua New Guinea",
+    comment: "One of the best graphic designers I've worked with. Armaan delivered what we wanted to our specifications, and took the time to ensure he understood what we needed. Armaan is detail-oriented, crystal-clear in his communication, and has a willingess that's hard to find these days to deliver to expectations. I never had any issues asking for multiple changes to our design and always received enthusiastic responses from Armaan showing how keen he was to work with his clients, which ultimately made the whole experience and collaboration stress-free and wonderful. If you're looking for an experienced designer, don't hestitate to engage Armaan; you won't be dissapointed!",
   },
 
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
+    name: "S A.",
+    userName: "United Kingdom",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "Armaan is very professional and attentive. He takes pride in his work and goes that extra mile to make sure you are satisfied with the final result. Armaan teams up with you to make sure you succeed. I will be happy to work with him again.",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
+    name: "- Saghi M.",
+    userName: "United States of America",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Armaan was very conscientious about completing the project on time and maintained good communication. He asked for feedback and provided recommendations. He was flexible in making changes to the project and delivered on time. Recommend him completely.",
+  },
+
+  {
+    image: "https://github.com/shadcn.png",
+    name: "Daniele P.",
+    userName: "Italy",
+    comment:
+      "Armaan is the best graphic artist I have ever met, very fast, professional and works with quality. I recommend it to everyone, truly impeccable. GREAT!! +++++ Bravo!!! complimenti!!! TOP!!",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
+    name: "Arjun",
+    userName: "India",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+      "Armaan is very clear with has to be done and it shows in the services he provides! He's got a hustler's attitude which i admire. Got the job done in half a day. Thank you armaan for your service!",
+  }
 ];
 
 export const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className=""
+      className="w-full px-20 space-y-5"
     >
       <h1 className="text-2xl md:text-3xl inline font-heading text-black dark:text-white">Testimonials</h1>
       <p>Here's what some awesome people I've worked with in the past have to say about me!</p>
 
-      <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
-      </p>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {testimonials.map(
-          ({ image, name, userName, comment }: TestimonialProps) => (
+          ({ name, userName, comment }: TestimonialProps) => (
             <Card
               key={userName}
-              className="max-w-md md:break-inside-avoid overflow-hidden"
+              className=" md:break-inside-avoid overflow-hidden"
             >
-              <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                <Avatar>
-                  <AvatarImage
-                    alt=""
-                    src={image}
-                  />
-                  <AvatarFallback>OM</AvatarFallback>
-                </Avatar>
 
-                <div className="flex flex-col">
+              <CardHeader>⭐⭐⭐⭐⭐</CardHeader>
+              <CardContent>{comment}</CardContent>
+              <CardFooter className="flex flex-row justify-end items-center gap-4">
+                <div className="flex flex-col items-end">
                   <CardTitle className="text-lg">{name}</CardTitle>
                   <CardDescription>{userName}</CardDescription>
                 </div>
-              </CardHeader>
-
-              <CardContent>{comment}</CardContent>
+              </CardFooter>
             </Card>
           )
         )}
