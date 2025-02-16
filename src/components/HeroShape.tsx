@@ -7,6 +7,7 @@ const Myshape = () => {
     useFrame((state, delta) => {
         ref.current.rotation.y += delta * 0.2;
         ref.current.rotation.x += delta * 0.2;
+        state
     })
     return (
         <mesh position={[1, 0, 0]} ref={ref}>

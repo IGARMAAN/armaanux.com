@@ -25,7 +25,7 @@ const testimonials: TestimonialProps[] = [
 
   {
     image: "https://github.com/shadcn.png",
-    name: "S A.",
+    name: "- S A.",
     userName: "United Kingdom",
     comment:
       "Armaan is very professional and attentive. He takes pride in his work and goes that extra mile to make sure you are satisfied with the final result. Armaan teams up with you to make sure you succeed. I will be happy to work with him again.",
@@ -40,14 +40,14 @@ const testimonials: TestimonialProps[] = [
 
   {
     image: "https://github.com/shadcn.png",
-    name: "Daniele P.",
+    name: "- Daniele P.",
     userName: "Italy",
     comment:
       "Armaan is the best graphic artist I have ever met, very fast, professional and works with quality. I recommend it to everyone, truly impeccable. GREAT!! +++++ Bravo!!! complimenti!!! TOP!!",
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Arjun",
+    name: "- Arjun",
     userName: "India",
     comment:
       "Armaan is very clear with has to be done and it shows in the services he provides! He's got a hustler's attitude which i admire. Got the job done in half a day. Thank you armaan for your service!",
@@ -75,7 +75,7 @@ export const Testimonials = () => {
               <CardContent>{comment}</CardContent>
               <CardFooter className="flex flex-row justify-end items-center gap-4">
                 <div className="flex flex-col items-end">
-                  <CardTitle className="text-lg">{name}</CardTitle>
+                  <CardTitle className="text-lg p-0">{name}</CardTitle>
                   <CardDescription>{userName}</CardDescription>
                 </div>
               </CardFooter>

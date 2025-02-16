@@ -8,7 +8,6 @@ import {
   Sheet,
   SheetContent,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -37,11 +36,11 @@ const routeList: RouteProps[] = [
     label: "Milestones",
   },
   {
-    href: "#faq",
-    label: "Blog",
+    href: "/blogs",
+    label: "Blogs",
   },
   {
-    href: "#faq",
+    href: "/contact",
     label: "Contact",
   },
 ];

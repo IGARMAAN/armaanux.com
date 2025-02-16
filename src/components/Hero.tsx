@@ -20,7 +20,7 @@ export const Hero = () => {
 
       <div className="z-10">
         <HeroShape />
-        <div className="absolute shadow-black/60 shadow-[10px_10px_70px_70px] -z-10 w-40 h-40 -rotate-90 right-[200px] top-[350px] rounded-full" />
+        <div className="absolute shadow-black/60 shadow-[10px_10px_70px_70px] -z-10 w-40 h-40 -rotate-90 right-[227px] top-[348px] rounded-full" />
       </div>
 
     </section>
