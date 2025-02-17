@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import projectimg1 from "@/assets/project-1.png"
 import { Button } from "@/components/ui/button";
 
@@ -72,7 +72,7 @@ export const Projects = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
         {projects.map(
-          ({ image, name, description, time, casestudyLink, prototypeLink }: ProjectsProps) => (
+          ({ image, name, description, time }: ProjectsProps) => (
             <Card
               key={name}
               className=" md:break-inside-avoid overflow-hidden"
